@@ -1,0 +1,113 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+.mobile-view__wrap {
+  height: calc(100vh - 20px);
+}
+.sendbird-conversation__messages {
+  background-color: rgb(212, 205, 197) !important;
+}
+.sendbird-message-content__left__avatar.sendbird-avatar {
+  display: none;
+}
+.sendbird-message-content__left.use-reactions.incoming {
+  min-width: revert !important;
+}
+
+.sendbird-theme--light .sendbird-text-message-item-body.outgoing {
+  color: black !important;
+}
+.sendbird-app__wrap,
+.mobile-view__wrap,
+.sendbird-app__conversation-wrap {
+  height: 100vh !important;
+}
+@media screen and (max-width: 960px) {
+  .mobile-view__wrap {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+  }
+  .mobile-view__wrap,
+  .sendbird-app__channellist-wrap,
+  .sendbird-channel-list {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .sendbird-channel-list__header,
+  .sendbird-channel-header {
+    width: 100% !important;
+  }
+  .MuiButtonBase-root.MuiIconButton-root.makeStyles-menuButton-130.MuiIconButton-colorInherit.MuiIconButton-edgeStart {
+    position: absolute;
+    z-index: 1;
+  }
+  .MuiIconButton-edgeStart {
+    right: -90%;
+    top: 55px;
+    position: relative;
+  }
+  .sendbird-channel-preview {
+    width: revert !important;
+  }
+  .sendbird-channel-preview
+    .sendbird-channel-preview__content
+    .sendbird-channel-preview__content__upper {
+    width: revert !important;
+  }
+  .sendbird-channel-preview
+    .sendbird-channel-preview__content
+    .sendbird-channel-preview__content__lower {
+    width: revert !important;
+  }
+  .back-button {
+    background-color: white;
+    border: none;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+  }
+  .sendbird-chat-header {
+    padding-left: 40px !important;
+  }
+  .sendbird-conversation {
+    position: absolute !important;
+  }
+  .sendbird-modal__content {
+    min-width: 30px !important;
+  }
+  .sendbird-add-channel__rectangle {
+    width: revert !important;
+  }
+}
+.sendbird-app__settingspanel-wrap {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(71, 74, 80);
+  overflow-x: hidden;
+}
+.sendbird-channel-header
+  .sendbird-channel-header__title
+  .sendbird-channel-header__title__right__name,
+.sendbird-channel-header
+  .sendbird-channel-header__title
+  .sendbird-channel-header__title__right__user-id {
+  display: none !important;
+}
+.sendbird-channel-preview
+  .sendbird-channel-preview__content
+  .sendbird-channel-preview__content__upper
+  .sendbird-channel-preview__content__upper__header
+  .sendbird-channel-preview__content__upper__header__total-members {
+  display: none;
+}
+.sendbird-theme--light
+  .sendbird-channel-preview--active
+  .sendbird-channel-preview__content__upper__header__channel-name {
+  color: revert !important;
+}

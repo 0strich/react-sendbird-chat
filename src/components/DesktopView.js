@@ -3,9 +3,10 @@ import SBConversation from "@sendbird/uikit-react/Channel";
 import SBChannelList from "@sendbird/uikit-react/ChannelList";
 import SBChannelSettings from "@sendbird/uikit-react/ChannelSettings";
 
-export default function SendbirdGroupChat() {
+export default function DesktopView() {
   const [showSettings, setShowSettings] = useState(false);
   const [currentChannelUrl, setCurrentChannelUrl] = useState("");
+  console.log("currentChannelUrl: ", currentChannelUrl);
 
   return (
     <div className="customized-app" style={{ height: "100vh" }}>
@@ -13,7 +14,10 @@ export default function SendbirdGroupChat() {
         {/* 채널 리스트 */}
         <div className="sendbird-app__channellist-wrap">
           <SBChannelList
+            isTypingIndicatorEnabled={true}
+            allowProfileEdit={true}
             onChannelSelect={(channel) => {
+              console.log("channel: ", channel);
               if (channel && channel.url) {
                 setCurrentChannelUrl(channel.url);
               }
